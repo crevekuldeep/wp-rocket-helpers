@@ -29,8 +29,8 @@ function render_rewrite_rules( $marker ) {
 	$redirection .= 'RewriteEngine On' . PHP_EOL;
 
 	//// EDIT THESE 2 LINES ////
-	$redirection .= 'RewriteCond %{HTTP_HOST} ^www.example\.com [NC]' . PHP_EOL;
-	$redirection .= 'RewriteRule ^(.*)$ http://example.com/$1 [L,R=301]' . PHP_EOL . PHP_EOL;
+	$redirection .= 'RewriteCond %{HTTP_HOST} ^www.panipuri\.us [NC]' . PHP_EOL;
+	$redirection .= 'RewriteRule ^(.*)$ http://www.panipuri.us/$1 [L,R=301]' . PHP_EOL . PHP_EOL;
 	//// STOP EDITING ////
 
 	// Prepend redirection rules to WP Rocket block.
